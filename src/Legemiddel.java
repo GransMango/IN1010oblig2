@@ -2,7 +2,7 @@ public abstract class Legemiddel {
     public final String navn;
     // revise can't be right
     public static int amountOfObjects = 0;
-    public int id;
+    public final int id;
     public int pris;
     public final double virkestoff;
     public Legemiddel(String navn, int pris, double virkestoff) {
