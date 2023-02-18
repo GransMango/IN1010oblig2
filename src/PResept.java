@@ -4,8 +4,8 @@ public class PResept extends HvitResept{
     }
     @Override
     public int prisAaBetale() {
-        if (legemiddel.pris >= 108) {
-            return legemiddel.pris - 108;
+        if (legemiddel.hentPris() >= 108) {
+            return legemiddel.hentPris() - 108;
         }
         return 0;
     }

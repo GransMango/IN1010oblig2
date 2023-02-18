@@ -24,11 +24,11 @@ public class TestResepter {
     }
 
     private boolean hvitReseptTest() {
-        return hvitResept.prisAaBetale() == narkotiskLegemiddel.pris;
+        return hvitResept.prisAaBetale() == narkotiskLegemiddel.hentPris();
 
     }
     private boolean blåReseptTest() {
-        return blåResept.prisAaBetale() == (int) Math.round(vanedannendeLegemiddel.pris / 0.25);
+        return blåResept.prisAaBetale() == (int) Math.round(vanedannendeLegemiddel.hentPris() / 0.25);
     }
 
     private boolean milReseptTest() {
@@ -55,7 +55,7 @@ public class TestResepter {
     }
 
     private boolean pReseptTest() {
-        return pResept.prisAaBetale() == narkotiskLegemiddel.pris - 108;
+        return pResept.prisAaBetale() == narkotiskLegemiddel.hentPris() - 108;
     }
 
     private boolean pReseptOnlyPositive() {
@@ -65,11 +65,11 @@ public class TestResepter {
     public void testAll() {
         int passed = 8;
         if (! hvitReseptTest()) {
-            System.out.println("Hvit resept priced wrong, expected: " + narkotiskLegemiddel.pris + " got: " + hvitResept.prisAaBetale());
+            System.out.println("Hvit resept priced wrong, expected: " + narkotiskLegemiddel.hentPris() + " got: " + hvitResept.prisAaBetale());
             passed--;
         }
         if (! blåReseptTest()) {
-            System.out.println("Blå resept priced wrong, expected: " + (int) Math.round(vanedannendeLegemiddel.pris / 0.25) + " got: " + blåResept.prisAaBetale());
+            System.out.println("Blå resept priced wrong, expected: " + (int) Math.round(vanedannendeLegemiddel.hentPris() / 0.25) + " got: " + blåResept.prisAaBetale());
             passed--;
         }
         if (! milReseptTest()) {
@@ -81,7 +81,7 @@ public class TestResepter {
             passed--;
         }
         if (! pReseptTest()) {
-            System.out.println("P resept priced wrong, expected: " + (narkotiskLegemiddel.pris - 108) + " got: " + pResept.prisAaBetale());
+            System.out.println("P resept priced wrong, expected: " + (narkotiskLegemiddel.hentPris() - 108) + " got: " + pResept.prisAaBetale());
             passed--;
         }
         if (! pReseptOnlyPositive()) {

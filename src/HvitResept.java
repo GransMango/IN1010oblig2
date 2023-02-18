@@ -10,6 +10,6 @@ public class HvitResept extends Resept{
 
     @Override
     public int prisAaBetale() {
-        return legemiddel.pris;
+        return legemiddel.hentPris();
     }
 }

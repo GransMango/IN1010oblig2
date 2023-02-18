@@ -3,7 +3,7 @@ public abstract class Legemiddel {
     // revise can't be right
     public static int amountOfObjects = 0;
     public final int id;
-    public int pris;
+    private int pris;
     public final double virkestoff;
     public Legemiddel(String navn, int pris, double virkestoff) {
         this.navn = navn;
