@@ -12,6 +12,6 @@ public class Spesialist extends Lege implements Godkjenningsfritak{
 
     @Override
     public String toString() {
-        return "Navn på lege: " + getNavn() + " kontrollkode: " + kontrollkode;
+        return "Legens navn: " + getNavn() + ", kontrollkode: " + kontrollkode;
     }
 }

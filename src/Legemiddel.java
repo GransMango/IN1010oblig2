@@ -1,11 +1,14 @@
 public abstract class Legemiddel {
     public final String navn;
-    // revise can't be right
     public static int amountOfObjects = 0;
     public final int id;
     private int pris;
     public final double virkestoff;
-    public Legemiddel(String navn, int pris, double virkestoff) {
+    public Legemiddel(String navn, int pris, double virkestoff) throws IllegalArgumentException {
+        // antar at ingen legemiddel er gratis.
+        if (pris < 0) {
+            throw new IllegalArgumentException("Pris kan ikke være negativ");
+        }
         this.navn = navn;
         this.pris = pris;
         this.virkestoff = virkestoff;
@@ -23,6 +26,6 @@ public abstract class Legemiddel {
 
     @Override
     public String toString() {
-        return "Navn: " + navn + " pris: " + pris + " virkestoff: " + virkestoff + " id: " + id;
+        return "Navn: " + navn + ", pris: " + pris + ", virkestoff: " + virkestoff + ", id: " + id;
     }
 }

@@ -1,14 +1,14 @@
 public class TestResepter {
-    private HvitResept hvitResept;
-    private BlåResept blåResept;
-    private MilResept milResept;
-    private PResept pResept;
-    private PResept pReseptUnder100;
-    private Narkotisk narkotiskLegemiddel;
-    private Vanedannende vanedannendeLegemiddel;
-    private Vanlig vanligLegemiddel;
-    private Vanlig vanligLegemiddel2;
-    private Lege lege;
+    private final HvitResept hvitResept;
+    private final BlåResept blåResept;
+    private final MilResept milResept;
+    private final PResept pResept;
+    private final PResept pReseptUnder100;
+    private final Narkotisk narkotiskLegemiddel;
+    private final Vanedannende vanedannendeLegemiddel;
+    private final Vanlig vanligLegemiddel;
+    private final Vanlig vanligLegemiddel2;
+    private final Lege lege;
     public TestResepter() {
         lege = new Lege("Pål");
         narkotiskLegemiddel = new Narkotisk(3, 3, "testnarko", 200);
@@ -23,30 +23,28 @@ public class TestResepter {
 
     }
 
-    private boolean hvitReseptTest() {
+    private boolean testHvitResept() {
         return hvitResept.prisAaBetale() == narkotiskLegemiddel.hentPris();
 
     }
-    private boolean blåReseptTest() {
+    private boolean testBlåResept() {
         return blåResept.prisAaBetale() == (int) Math.round(vanedannendeLegemiddel.hentPris() / 0.25);
     }
 
-    private boolean milReseptTest() {
+    private boolean testMilResept() {
         return milResept.prisAaBetale() == 0;
     }
-    private boolean milReseptReitTest() {
+    private boolean testMilReseptReit() {
         return milResept.reit == 3;
     }
 
-    private boolean milReseptReitUseOnceTest() {
+    private boolean testMilReseptReitUseOnce() {
         if (milResept.bruk()) {
-            if (milResept.reit == 2) {
-                return true;
+            return milResept.reit == 2;
             }
-        }
         return false;
     }
-    private boolean milReseptReitEmpyTest() {
+    private boolean testMilReseptReitEmpy() {
         milResept.reit = 3;
         milResept.bruk();
         milResept.bruk();
@@ -54,45 +52,45 @@ public class TestResepter {
         return !milResept.bruk();
     }
 
-    private boolean pReseptTest() {
+    private boolean testPResept() {
         return pResept.prisAaBetale() == narkotiskLegemiddel.hentPris() - 108;
     }
 
-    private boolean pReseptOnlyPositive() {
+    private boolean testPReseptOnlyPositive() {
         return pReseptUnder100.prisAaBetale() >= 0;
     }
 
     public void testAll() {
         int passed = 8;
-        if (! hvitReseptTest()) {
+        if (! testHvitResept()) {
             System.out.println("Hvit resept priced wrong, expected: " + narkotiskLegemiddel.hentPris() + " got: " + hvitResept.prisAaBetale());
             passed--;
         }
-        if (! blåReseptTest()) {
-            System.out.println("Blå resept priced wrong, expected: " + (int) Math.round(vanedannendeLegemiddel.hentPris() / 0.25) + " got: " + blåResept.prisAaBetale());
+        if (! testBlåResept()) {
+            System.out.println("Blå resept priced wrong, expected: " + (int) Math.round(vanedannendeLegemiddel.hentPris() * 0.25) + " got: " + blåResept.prisAaBetale());
             passed--;
         }
-        if (! milReseptTest()) {
+        if (! testMilResept()) {
             System.out.println("Mil resept priced wrong, expected: " + 0 + " got: " + milResept.prisAaBetale());
             passed--;
         }
-        if (! milReseptReitTest()) {
+        if (! testMilReseptReit()) {
             System.out.println("Mil reit is wrong, expected: " + 3 + " got: " + milResept.reit);
             passed--;
         }
-        if (! pReseptTest()) {
+        if (! testPResept()) {
             System.out.println("P resept priced wrong, expected: " + (narkotiskLegemiddel.hentPris() - 108) + " got: " + pResept.prisAaBetale());
             passed--;
         }
-        if (! pReseptOnlyPositive()) {
+        if (! testPReseptOnlyPositive()) {
             System.out.println("P resept priced wrong, expected value above 0, got: " + pReseptUnder100.prisAaBetale());
             passed--;
         }
-        if (! milReseptReitUseOnceTest()) {
+        if (! testMilReseptReitUseOnce()) {
             System.out.println("Mil reit returnered false with one use, expected true");
             passed--;
         }
-        if (! milReseptReitEmpyTest()) {
+        if (! testMilReseptReitEmpy()) {
             System.out.println("Mil reit returned true when empty, expected false");
             passed--;
         }

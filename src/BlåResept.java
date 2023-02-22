@@ -10,6 +10,7 @@ public class BlåResept extends Resept{
 
     @Override
     public int prisAaBetale() {
-        return (int) Math.round(legemiddel.hentPris() / 0.25);
+        return (int) Math.round(legemiddel.hentPris() * 0.25);
     }
+
 }

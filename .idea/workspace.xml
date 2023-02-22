@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b4dac23-5731-43ee-beba-0dd3a8fb5d10" name="Changes" comment="Updated, made changes to main">
+    <list default="true" id="9b4dac23-5731-43ee-beba-0dd3a8fb5d10" name="Changes" comment="cleaned up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BlåResept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlåResept.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Legemiddel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Legemiddel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PResept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PResept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Spesialist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spesialist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestLegemiddel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestLegemiddel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestResepter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestResepter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +59,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/danie/Documents/skole/in1010/2/Legemiddel/src/MilResept.java&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -63,6 +71,20 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Legemiddel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,7 +98,17 @@
       <workItem from="1676422218087" duration="801000" />
       <workItem from="1676489895076" duration="890000" />
       <workItem from="1676556966819" duration="563000" />
-      <workItem from="1676737253112" duration="8000" />
+      <workItem from="1676737253112" duration="293000" />
+      <workItem from="1676738717812" duration="1317000" />
+      <workItem from="1676740980945" duration="1752000" />
+      <workItem from="1676828894848" duration="134000" />
+      <workItem from="1676907498351" duration="200000" />
+      <workItem from="1677091594083" duration="1002000" />
+      <workItem from="1677092610848" duration="2765000" />
+      <workItem from="1677100579577" duration="293000" />
+      <workItem from="1677103044784" duration="1057000" />
+      <workItem from="1677104110944" duration="10000" />
+      <workItem from="1677106426591" duration="595000" />
     </task>
     <task id="LOCAL-00001" summary="Commited ignore">
       <created>1676420031228</created>
@@ -120,17 +152,37 @@
       <option name="project" value="LOCAL" />
       <updated>1676557527218</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed pris to private">
+      <created>1676737469960</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676737469960</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commited ignore" />
     <MESSAGE value="Commited entire project" />
     <MESSAGE value="new gitignore" />
     <MESSAGE value="Updated, made changes to main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated, made changes to main" />
+    <MESSAGE value="Changed pris to private" />
+    <MESSAGE value="cleaned up" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up" />
   </component>
 </project>

@@ -9,4 +9,5 @@ public class PResept extends HvitResept{
         }
         return 0;
     }
+
 }

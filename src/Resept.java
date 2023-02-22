@@ -26,4 +26,9 @@ public abstract class Resept {
 
     abstract public int prisAaBetale();
 
+    public String toString() {
+        return "Legemiddel: " + legemiddel.navn + "\nSkrevet ut av: " + lege.getNavn()
+                + "\nAntall reiterasjoner: " + reit + "\nSkrevet til pasient: " + pasientId +"\n";
+    }
+
 }
