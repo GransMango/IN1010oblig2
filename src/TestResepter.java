@@ -94,6 +94,6 @@ public class TestResepter {
             System.out.println("Mil reit returned true when empty, expected false");
             passed--;
         }
-        System.out.println(passed + "/8 tests passed");
+        System.out.println(passed + "/8 Resepter tests passed");
     }
 }

@@ -10,34 +10,55 @@ public class TestLegemiddel {
         narkotisk = new Narkotisk(3, 3, "testnarko", 4);
         vanedannende = new Vanedannende(3, 3, "testvane", 4);
         vanlig = new Vanlig("Vanlig", 3, 3);
-        testIllegalPrice();
-        testUniqueId();
-        testSettPris();
-        testHentPris();
     }
 
-    private void testIllegalPrice() {
+    private boolean testIllegalPrice() {
         try {
             narkotisk = new Narkotisk(3, 4, "testnarko", -1);
             System.out.println("testIllegalPrice wrong, object created");
         } catch (IllegalArgumentException e) {
+            return true;
         }
+        return false;
     }
 
-    private void testSettPris() {
+    private boolean testSettPris() {
         Narkotisk testNarkotisk = new Narkotisk(5, 5, "testNarko", 100);
         testNarkotisk.settNyPris(150);
-        assert(testNarkotisk.hentPris() == 150);
+        return testNarkotisk.hentPris() == 150;
     }
 
-    private void testHentPris() {
+    private boolean testHentPris() {
         Narkotisk testNarkotisk = new Narkotisk(5, 5, "testNarko", 100);
-        assert(testNarkotisk.hentPris() == 100);
+        return testNarkotisk.hentPris() == 100;
     }
 
-    private void testUniqueId() {
+    private boolean testUniqueId() {
         List<Legemiddel> legemidler = new ArrayList<>(Arrays.asList(narkotisk, vanedannende, vanlig));
-        assert(legemidler.size() == legemidler.stream().map(id -> id.id).distinct().count());
+        System.out.println();
+        return legemidler.size() == legemidler.stream().map(id -> id.id).distinct().count();
+
+    }
+
+    public void testAll() {
+        int passed = 4;
+        if (!testUniqueId()) {
+            System.out.println("Unique id not achieved");
+            passed--;
+        }
+        if (!testHentPris()) {
+            System.out.println("HentPris unexpected behaviour");
+            passed--;
+        }
+        if (!testSettPris()) {
+            System.out.println("SettPris unexpected behaviour");
+            passed--;
+        }
+        if (!testIllegalPrice()) {
+            System.out.println("Illegal price");
+            passed--;
+        }
+        System.out.println(passed + "/4 Legemiddel tests passed ");
 
     }
 
