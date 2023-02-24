@@ -28,7 +28,7 @@ public class TestResepter {
 
     }
     private boolean testBlåResept() {
-        return blåResept.prisAaBetale() == (int) Math.round(vanedannendeLegemiddel.hentPris() / 0.25);
+        return blåResept.prisAaBetale() == (int) Math.round(vanedannendeLegemiddel.hentPris() * 0.25);
     }
 
     private boolean testMilResept() {

@@ -5,7 +5,7 @@ public abstract class Legemiddel {
     private int pris;
     public final double virkestoff;
     public Legemiddel(String navn, int pris, double virkestoff) throws IllegalArgumentException {
-        // antar at ingen legemiddel er gratis.
+        // legemidler kan ikke koste mer enn 0.
         if (pris < 0) {
             throw new IllegalArgumentException("Pris kan ikke være negativ");
         }
