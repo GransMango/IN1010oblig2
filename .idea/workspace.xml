@@ -4,49 +4,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4103d74-0838-4573-8c33-c24c3fc9cff6" name="Changes" comment="small changes">
+    <list default="true" id="9b4dac23-5731-43ee-beba-0dd3a8fb5d10" name="Changes" comment="cleaned up">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Legemiddel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Legemiddel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BlåResept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlåResept.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestLegemiddel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestLegemiddel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resept.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2MBcCphvpqEhVEyRm2XvASvcKQo" />
+  <component name="ProjectId" id="2LkPjZtgt8iH1RUqPayuSh7eeeu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/danie/Documents/skole/in1010/2/Legemiddel/src/MilResept.java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/danie/Documents/skole/in1010/2/Legemiddel/src/MilResept.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="in1010" />
       <method v="2">
@@ -62,28 +88,111 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c4103d74-0838-4573-8c33-c24c3fc9cff6" name="Changes" comment="" />
-      <created>1677244293068</created>
+      <changelist id="9b4dac23-5731-43ee-beba-0dd3a8fb5d10" name="Changes" comment="" />
+      <created>1676412244826</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677244293068</updated>
-      <workItem from="1677244294210" duration="1301000" />
+      <updated>1676412244826</updated>
+      <workItem from="1676412246027" duration="7962000" />
+      <workItem from="1676422218087" duration="801000" />
+      <workItem from="1676489895076" duration="890000" />
+      <workItem from="1676556966819" duration="563000" />
+      <workItem from="1676737253112" duration="293000" />
+      <workItem from="1676738717812" duration="1317000" />
+      <workItem from="1676740980945" duration="1752000" />
+      <workItem from="1676828894848" duration="134000" />
+      <workItem from="1676907498351" duration="200000" />
+      <workItem from="1677091594083" duration="1002000" />
+      <workItem from="1677092610848" duration="2765000" />
+      <workItem from="1677100579577" duration="293000" />
+      <workItem from="1677103044784" duration="1057000" />
+      <workItem from="1677104110944" duration="10000" />
+      <workItem from="1677106426591" duration="595000" />
     </task>
-    <task id="LOCAL-00001" summary="small changes">
-      <created>1677244941186</created>
+    <task id="LOCAL-00001" summary="Commited ignore">
+      <created>1676420031228</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1677244941186</updated>
+      <updated>1676420031228</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commited ignore">
+      <created>1676420075683</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676420075683</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commited entire project">
+      <created>1676420214764</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676420214764</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commited entire project">
+      <created>1676420244377</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676420244377</updated>
+    </task>
+    <task id="LOCAL-00005" summary="new gitignore">
+      <created>1676420277950</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676420277950</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated, made changes to main">
+      <created>1676557527218</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676557527218</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changed pris to private">
+      <created>1676737469960</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676737469960</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="small changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
+    <MESSAGE value="Commited ignore" />
+    <MESSAGE value="Commited entire project" />
+    <MESSAGE value="new gitignore" />
+    <MESSAGE value="Updated, made changes to main" />
+    <MESSAGE value="Changed pris to private" />
+    <MESSAGE value="cleaned up" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up" />
   </component>
 </project>

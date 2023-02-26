@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        // test();
+        //test();
         Lege pål = new Lege("Pål");
         Lege kristine = new Spesialist("Kristine", "a01");
         Vanedannende stesolid = new Vanedannende(5, 30, "stesoild", 250);
@@ -18,15 +18,14 @@ public class Main {
         System.out.println("pResept\n" + pResept);
         System.out.println("milresept\n" + milResept);
         System.out.println(blåResept.farge() + " resept\n " + blåResept);
-        System.out.println(blåResept.farge() + " resept pris: " + blåResept.prisAaBetale() + "\n");
-        System.out.println("pResept pris: " + pResept.prisAaBetale() + "\n");
-        System.out.println("milresept pris: " + milResept.prisAaBetale() + "\n");
     }
 
     public static void test() {
+        System.out.println("TESTS");
         TestLegemiddel test = new TestLegemiddel();
         TestResepter testResepter = new TestResepter();
         testResepter.testAll();
         test.testAll();
+        System.out.println("");
     }
 }
